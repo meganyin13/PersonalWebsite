@@ -1,0 +1,530 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    padding: 0.5em 0.75em;
+}
+
+@media screen and (min-width: 600px) {
+    section {
+       padding: 1.5em 8em 1.5em 3em;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+    /*font-size: 4rem;*/
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+section h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.date {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* Navigation styles */
+
+nav  {
+    border: 0;
+    background-color: #222222;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 110px;
+    z-index: 999;
+    border-radius: 0 0 25px 25px;
+}
+
+/*nav {*/
+    /*width: 190px;*/
+    /*position: relative;*/
+    /*!*align: right;*!*/
+    /*margin-left: 410px;*/
+/*}*/
+
+nav li {
+    list-style-type: none;
+    display: block;
+    float: none;
+    height: 80px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li a {
+    text-decoration: none;
+    display: block;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+nav li a:hover, nav li a:focus {
+    background-color: #be7baf;
+    /* color: #999999; */
+}
+
+/* nav li a:active {
+    background-color: #be7baf;
+}
+*/
+nav li:first-child {
+    display: none;
+}
+
+.fixed nav {
+    position: fixed;
+    top: 40px;
+    /*bottom: 0;*/
+}
+
+
+
+/*nav svg {*/
+    /*width: 100px;*/
+    /*height: 50px;*/
+/*}*/
+
+/*svg.hoverLine {*/
+    /*z-index: -1;*/
+    /*display: block;*/
+    /*margin-top: -40px;*/
+    /*position: absolute;*/
+/*}*/
+
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    .none {
+        display: none;
+    }
+
+    nav li:first-child {
+        display: block;
+        float: right;
+        position: fixed;
+        padding: 1em;
+    }
+
+    .chevron {
+        display: none;
+    }
+
+
+    nav li:not(:first-child) {
+        display: block;
+    }
+
+    .icon:hover {
+        background-color: white;
+    }
+}
+
+/* Header styles */
+.header {
+    background-color: #bc7c9ca6;
+    /* For larger screen sizes: height: 400px;*/
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.headshot {
+    width: 50vw;
+    /*width: 50vh;*/
+    /*height: 300px;*/
+    border-radius: 50%;
+    /*margin-right: 4em;*/
+}
+
+.header h2 {
+    font-size: 1.1rem;
+    /*font-size: 2rem;*/
+}
+
+@media screen and (min-width: 600px) {
+    .header {
+        /*height: 400px;*/
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        padding: 10vh 15vw;
+        background-color: white;
+        background: url("nyc_background.jpg") no-repeat center center fixed;
+        /*opacity: 0.8;*/
+        background-size: cover;
+        color: #cec8c8;/* #b2aeae;*/
+    }
+
+    .header h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0.75em;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    .headshot {
+        /*margin: 0 2em;*/
+        width: 300px;
+    }
+    .chevron {
+        height: 80px;
+        width: 110px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        background-color: #222222;
+        text-align: center;
+        font-size: 4rem;
+        z-index: 6;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .scroll-down-link {
+        text-decoration: none;
+        color: white;
+    }
+
+    .scroll-down-link:hover i {
+        color: #999;
+    }
+
+    .header .scroll-down i {
+        padding-right: 2px;
+        padding-top: 12px;
+
+        animation-name: wiggle;
+        animation-duration: 1.1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    @keyframes wiggle {
+        0% {
+            padding-top: 12px;
+        }
+
+        50% {
+            padding-top: 20px;
+        }
+
+        100% {
+            padding-top: 12px;
+        }
+    }
+    /*.chevron i {*/
+        /*height: 80px;*/
+        /*width: 100px;*/
+        /*position: absolute;*/
+        /*top: 5px;*/
+        /*left: 5px;*/
+    /*}*/
+}
+
+/* About styles */
+.about {
+    margin: 0;
+    padding: 0.5em 0.75em;
+    background-color: #deb4b4a6;
+}
+.about h2 {
+    font-size: 1.5rem;
+}
+
+.about p {
+    line-height: normal;
+}
+
+.about h4 {
+    font-size: 1rem;
+}
+
+.about h3 {
+    display: none;
+}
+
+.about-details {
+    display: none;
+}
+
+.about-headshot {
+    display: none;
+}
+
+@media screen and (min-width: 840px) {
+    .about {
+        padding: 3em 8em 1.5em 3em;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /*.typewriter-none {*/
+        /*display: none;*/
+    /*}*/
+
+    .typewriter {
+        width: fit-content;
+        padding-left: 13em;
+    }
+
+    .typewriter h2 {
+        font-size: 5rem;
+        font-family: monospace, sans-serif;
+        font-weight: normal;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .1em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto 0.5em auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0; /* Adjust as needed */
+        animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: black; }
+    }
+
+    .about h3 {
+        display: block;
+        font-size: 2.25rem;
+        margin-bottom: 0.25em;
+        color: #0a0376;
+    }
+
+    .about h4 {
+        font-size: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .about-details h3 {
+        margin-top: 0.5em;
+    }
+
+    .about-details p {
+        font-size: 1rem;
+        display: block;
+        margin: 0.5em 0 0.5em 1em;
+    }
+
+    .about-blurb {
+        float: left;
+        width: 35%;
+        min-height: 175px;
+        padding-right: 5%;
+    }
+
+    .about-blurb p {
+        line-height: 1.5em;
+
+    }
+
+    .about-blurb h3 {
+        margin-top: 0.25em;
+    }
+
+    .about-headshot {
+        display: block;
+        float: left;
+        width: 20%;
+        padding-right: 5%;
+    }
+
+    .about .headshot {
+        /*width: 60vw;*/
+        /*position: relative;*/
+        top: 5px;
+        left: 5px;
+    }
+
+    .about-details {
+        display: block;
+        float: right;
+        width: 35%;
+    }
+
+    .about-details-content {
+        padding-left: 2em;
+    }
+}
+
+/* Work Styles */
+.work {
+    clear: both;
+    background-color: #8d637347;
+}
+
+.work h3 {
+    padding-top: 1em;
+}
+
+.skills p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.skills li {
+    padding: 2px 5px;
+    margin: 1px 0;
+    display: inline-block;
+    list-style-type: none;
+    background-color: #dba3daa6;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 840px) {
+
+    .work h2 {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .work p {
+        font-size: 1rem;
+    }
+    .content-wrap {
+        margin: 0 auto;
+        /*padding: 60px 50px;*/
+        overflow: hidden;
+    }
+
+    .col-narrow {
+        float: left;
+        width: 30%;
+        padding-right: 5%;
+        min-height: 175px;
+    }
+
+    .col-wide {
+        display: inline-block;
+        float: left;
+        width: 65%;
+        min-height: 175px;
+    }
+
+
+}
+
+/* Education Styles */
+.education {
+    background-color: #c1a29c99;
+}
+
+.education h3 {
+    padding-top: 1em;
+}
+
+.education p {
+    padding: 0;
+    margin-top: 0.5em;
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 600px) {
+
+    .education h2 {
+        text-align: left;
+    }
+
+    .education p {
+        font-size: 1rem;
+        margin-top: 0.25em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .education .col-wide {
+        display: none;
+    }
+}
+
+/* Contact Styles */
+.contact {
+    clear: both;
+    background-color: #9a96b68c;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75em;
+}
+
+.contact a {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+.contact p {
+    font-size: 0.5rem;
+    color: #ccc8c8f7;
+}
+
+@media screen and (min-width: 600px) {
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+}
+

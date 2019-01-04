@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #bc7c9ca6;
+    /* For larger screen sizes: height: 400px;*/
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
