@@ -504,6 +504,7 @@ nav li:first-child {
     background-color: #9a96b68c;
     padding: 1.5em;
     text-align: center;
+    height: fit-content;
 }
 
 .contact h2 {
@@ -516,6 +517,14 @@ nav li:first-child {
     font-size: 1.5rem;
 }
 
+.contact a:enabled {
+    color: blue;
+}
+
+.contact a:active {
+    color: red;
+}
+
 
 .contact p {
     font-size: 0.5rem;
@@ -524,6 +533,9 @@ nav li:first-child {
 
 @media screen and (min-width: 600px) {
     .contact h2 {
+        font-size: 2.5rem;
+    }
+    .contact a {
         font-size: 2.5rem;
     }
 }
