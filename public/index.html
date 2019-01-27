@@ -6,7 +6,7 @@
     <title>Meijun Yin | Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles_mobile-first.css" >
+    <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
     <nav>
@@ -21,12 +21,13 @@
             </li>
             <li><a href="#work"><span>Work Experience</span></a></li>
             <li><a href="#education"><span>Education</span></a></li>
+            <li><a href="#projects"><span>Projects</span></a></li>
             <li><a href="#contact"><span>Contact Me</span></a></li>
         </ul>
     </nav>
 
     <header class="header">
-        <img class="headshot headshot-main" src="headshot.jpg" alt="Meijun Yin" />
+        <img class="headshot headshot-main" src="images/headshot.jpg" alt="Meijun Yin" />
         <h1>Meijun Yin</h1>
         <h2>Computer Science @ Cornell University</h2>
         <h3>Student. Coder. Cornellian.</h3>
@@ -48,7 +49,7 @@
                     In addition, I’ve discovered the best code is written together and I love spending weekends at
                     collegiate hackathons or working with my team Cornell Mars Rover on campus.</p>
             </div>
-            <div class="about-headshot"><img class="headshot" src="headshot2.jpg" /></div>
+            <div class="about-headshot"><img class="headshot" src="images/headshot2.jpg" /></div>
             <div class="about-details">
                 <h3>Details</h3>
                 <div class="about-details-content">
@@ -211,6 +212,50 @@
                 <ul>
                     <li>AP Computer Science</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2><i class="fas fa-clipboard-check"></i> Projects</h2>
+            <div class="row">
+                <a class="image" href="http://marketstoday.meijunyin.com" target="_blank">
+                    <img src="./images/marketstoday3.png" alt="Markets Today">
+                </a>
+                <p>
+                    <a href="http://marketstoday.meijunyin.com" target="_blank"><strong>Markets Today</strong></a>
+                    -- This winter break I began diving into web development with this new project that unites
+                    both my fascination with the stock market and my interest in web design. Currently, Markets
+                    Today allows users to view changes in stock symbol price in various time intervals from
+                    1 day up to 5 years, save stock symbols to their portfolio, and see key stock data measurements.
+                    I developed this project using AngularJS, D3.js, and queries to the CNBC API. I hope to continue
+                    this project throughout my high school career--perhaps adding new features to facilitate paper
+                    trading and stock price predictions using data science, NLP, and machine learning.
+                </p>
+            </div>
+            <div class="row">
+                <a class="image" href="http://meganyin13.tumblr.com" target="_blank">
+                    <img src="./images/DREAMChallenge.jpg" alt="Drug Combination Prediction DREAM Challenge">
+                </a>
+                <p>
+                    <a href="http://meganyin13.tumblr.com" target="_blank"><strong>Predicting Synergistic Cancer Drug Combinations</strong></a>
+                    -- During high school I interned in the Christina Leslie computational biology lab and worked on
+                    project to predict synergistic cancer drug combinations for use in a novel cancer therapy strategy
+                    combination therapy. I used data from the LINCS L1000 dataset and the AstraZeneca Drug Combination
+                    Prediction DREAM challenge to predict synergy scores using machine learning models.
+                </p>
+            </div>
+            <div class="row">
+                <a class="image" href="https://github.com/femaidens/2018-Robot-Code/tree/PIDDrive/src/org/usfirst/frc/team2265/robot/subsystems" target="_blank">
+                    <img src="./images/femaidensLogo2.png" alt="PIDDrive for FeMaidens">
+                </a>
+                <p>
+                    <a href="https://github.com/femaidens/2018-Robot-Code/tree/PIDDrive/src/org/usfirst/frc/team2265/robot/subsystems" target="_blank"><strong>PIDDrive for FeMaidens</strong></a>
+                    -- In my robotics team, one of my biggest projects was developing a PID (proportional integral
+                    derivative) drive system that would allow the robot to drive itself when driving straight. This
+                    subsystem would take speed data from encoders to determine how off the robot is when driving
+                    straight and correct itself over time.
+                </p>
             </div>
         </div>
     </section>
